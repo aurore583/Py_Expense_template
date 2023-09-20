@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  python:
+    image: python:3.9
+    command: tail -F anything
+    volumes:
+    - ./:/app
+    ports: 
+    - 5000:5000
